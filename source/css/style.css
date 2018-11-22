@@ -158,6 +158,10 @@ a {
   vertical-align: top;
   z-index: 1; }
 
+.header__icon {
+  width: 59px;
+  height: 51px; }
+
 .header__icon use {
   fill: #bb9b6a; }
 
@@ -204,9 +208,18 @@ a {
     opacity: 0.7; } }
 
 @media (min-width: 1280px) {
-  .header > .container::before {
-    content: "";
-    right: 32px; } }
+  .header > .container {
+    padding-top: 30px; }
+    .header > .container::before {
+      content: "";
+      right: 32px; }
+  .header__icon {
+    margin-left: 2px;
+    width: 75px;
+    height: 63px; }
+  .header__phone {
+    margin-top: 21px;
+    margin-right: 51px; } }
 
 .nav {
   position: relative;
@@ -242,6 +255,10 @@ a {
   .nav__item:not(:last-of-type) {
     margin-right: 50px; } }
 
+@media (min-width: 1280px) {
+  .nav {
+    margin-top: 621px; } }
+
 .lang {
   position: relative;
   width: 75px;
@@ -273,8 +290,10 @@ a {
 
 @media (min-width: 768px) {
   .lang {
-    width: 134px;
-    padding-right: 60px; } }
+    width: 129px;
+    padding-right: 64px; }
+  .lang__list {
+    margin-top: 18px; } }
 
 .intro {
   position: relative;
@@ -297,6 +316,9 @@ a {
     background-image: url("../img/intro__pattern.svg");
     background-repeat: no-repeat;
     background-position: 0 0; }
+
+.intro > .container {
+  position: relative; }
 
 .intro__heading {
   position: relative;
@@ -325,7 +347,9 @@ a {
 
 @media (min-width: 768px) {
   .intro {
-    padding-bottom: 290px; }
+    padding-bottom: 290px;
+    background-size: cover;
+    background-position: 50% 0; }
   .intro__heading,
   .intro__descriptor {
     width: 640px; } }
@@ -333,7 +357,36 @@ a {
 @media (min-width: 1280px) {
   .intro {
     position: relative;
-    margin-top: -667px;
-    padding-bottom: 178px;
-    background-size: cover;
-    background-position: 50% 0; } }
+    margin-top: calc(-689px - 91px);
+    padding-bottom: 300px; }
+  .intro__heading {
+    padding-top: 302px; } }
+
+.control {
+  position: absolute;
+  right: 33px;
+  top: 322px;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.control__item {
+  font-size: 0; }
+
+.control__item:not(:last-of-type) {
+  margin-bottom: 30px; }
+
+.control__item--active .control__link {
+  width: 30px; }
+
+.control__link {
+  display: block;
+  margin-left: auto;
+  width: 10px;
+  height: 1px;
+  background-color: #bb9b6a; }
+
+@media (min-width: 768px) {
+  .control {
+    display: block; } }

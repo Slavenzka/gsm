@@ -23,6 +23,10 @@
   }
 }
 
+.intro > .container {
+  position: relative;
+}
+
 .intro__heading {
   position: relative;
   margin: 0 auto;
@@ -53,6 +57,8 @@
 @media (min-width: $width__tablet) {
   .intro {
     padding-bottom: 290px;
+    background-size: cover;
+    background-position: 50% 0;
   }
 
   .intro__heading,
@@ -64,9 +70,11 @@
 @media (min-width: $width__desktop) {
   .intro {
     position: relative;
-    margin-top: -667px;
-    padding-bottom: 178px;
-    background-size: cover;
-    background-position: 50% 0;
+    margin-top: calc(-689px - 91px);
+    padding-bottom: 300px;
+  }
+
+  .intro__heading {
+    padding-top: 302px;
   }
 }

@@ -32,3 +32,9 @@
     margin-right: 50px;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .nav {
+    margin-top: 621px;
+  }
+}
