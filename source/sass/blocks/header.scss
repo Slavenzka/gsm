@@ -1,0 +1,75 @@
+.header > .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.header__link {
+  position: relative;
+  order: 1;
+  display: inline-block;
+  margin-left: -1px;
+  font-size: 0;
+  vertical-align: top;
+  z-index: 1;
+}
+
+.header__icon use {
+  fill: $color__highlight;
+}
+
+.header__phone {
+  order: 2;
+  position: relative;
+  display: none;
+  z-index: 1;
+}
+
+.header__lang {
+  order: 3;
+}
+
+.header__nav {
+  order: 4;
+}
+
+@media (min-width: $width__tablet) {
+  .header > .container {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 100% * 15 / 375;
+      width: 1px;
+      height: 100px;
+      background-color: $color__highlight;
+    }
+  }
+
+  .header__phone {
+    display: block;
+    margin-top: 17px;
+    margin-right: 50px;
+    margin-left: auto;
+    font-family: $font-family__main;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $color__light;
+    opacity: 0.7;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .header > .container {
+    &::before {
+      content: "";
+      right: 32px;
+    }
+  }
+}
