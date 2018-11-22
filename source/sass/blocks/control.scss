@@ -1,0 +1,35 @@
+.control {
+  position: absolute;
+  right: 33px;
+  top: 322px;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.control__item {
+  font-size: 0;
+}
+
+.control__item:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.control__item--active .control__link {
+  width: 30px;
+}
+
+.control__link {
+  display: block;
+  margin-left: auto;
+  width: 10px;
+  height: 1px;
+  background-color: $color__highlight;
+}
+
+@media (min-width: $width__tablet) {
+  .control {
+    display: block;
+  }
+}
