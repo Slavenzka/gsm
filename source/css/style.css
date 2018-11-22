@@ -1,0 +1,339 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+  src: url("../fonts/opensanslightitalic.woff2") format("woff2"), url("../fonts/opensanslightitalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+  src: url("../fonts/opensansitalic.woff2") format("woff2"), url("../fonts/opensansitalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/opensanssemibold.woff2") format("woff2"), url("../fonts/opensanssemibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+  src: url("../fonts/opensanssemibolditalic.woff2") format("woff2"), url("../fonts/opensanssemibolditalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+  src: url("../fonts/opensansbolditalic.woff2") format("woff2"), url("../fonts/opensansbolditalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/opensansextrabold.woff2") format("woff2"), url("../fonts/opensansextrabold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+  src: url("../fonts/opensansextrabolditalic.woff2") format("woff2"), url("../fonts/opensansextrabolditalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "Tinos";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/tinos.woff2") format("woff2"), url("../fonts/tinos.woff") format("woff"); }
+
+@font-face {
+  font-family: "Tinos";
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+  src: url("../fonts/tinositalic.woff2") format("woff2"), url("../fonts/tinositalic.woff") format("woff"); }
+
+@font-face {
+  font-family: "Tinos";
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/tinosbold.woff2") format("woff2"), url("../fonts/tinosbold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Tinos";
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+  src: url("../fonts/tinosbolditalic.woff2") format("woff2"), url("../fonts/tinosbolditalic.woff") format("woff"); }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  font-size: 0; }
+
+.container {
+  min-width: 375px;
+  padding: 0 3.73333%; }
+
+@media (min-width: 1280px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 32px;
+    min-width: 1280px; } }
+
+.header > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 50px; }
+
+.header__link {
+  position: relative;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: inline-block;
+  margin-left: -1px;
+  font-size: 0;
+  vertical-align: top;
+  z-index: 1; }
+
+.header__icon use {
+  fill: #bb9b6a; }
+
+.header__phone {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  position: relative;
+  display: none;
+  z-index: 1; }
+
+.header__lang {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3; }
+
+.header__nav {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4; }
+
+@media (min-width: 768px) {
+  .header > .container {
+    position: relative;
+    z-index: 1; }
+    .header > .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 4%;
+      width: 1px;
+      height: 100px;
+      background-color: #bb9b6a; }
+  .header__phone {
+    display: block;
+    margin-top: 17px;
+    margin-right: 50px;
+    margin-left: auto;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    opacity: 0.7; } }
+
+@media (min-width: 1280px) {
+  .header > .container::before {
+    content: "";
+    right: 32px; } }
+
+.nav {
+  position: relative;
+  margin-top: 530px;
+  width: 100%;
+  z-index: 1; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.nav__link {
+  display: block;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+  opacity: 0.5; }
+
+@media (min-width: 768px) {
+  .nav__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .nav__item:not(:last-of-type) {
+    margin-right: 50px; } }
+
+.lang {
+  position: relative;
+  width: 75px;
+  z-index: 1; }
+
+.lang__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  margin-top: 17px;
+  padding: 0;
+  list-style: none; }
+
+.lang__item .lang__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+  opacity: 0.5; }
+
+.lang__item--active .lang__link {
+  color: #bb9b6a;
+  opacity: 1; }
+
+@media (min-width: 768px) {
+  .lang {
+    width: 134px;
+    padding-right: 60px; } }
+
+.intro {
+  position: relative;
+  margin-top: -667px;
+  padding-bottom: 178px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: rgba(0, 17, 35, 0.85);
+  background-image: url("../img/intro__bg.png");
+  background-size: 350%;
+  background-position: 49.7% 55%;
+  background-repeat: no-repeat; }
+  .intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 17, 35, 0.85);
+    background-image: url("../img/intro__pattern.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0; }
+
+.intro__heading {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 179px;
+  width: 345px;
+  font-family: "Tinos", "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #bb9b6a;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.intro__descriptor {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 38px;
+  width: 345px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
+  opacity: 0.7; }
+
+@media (min-width: 768px) {
+  .intro {
+    padding-bottom: 290px; }
+  .intro__heading,
+  .intro__descriptor {
+    width: 640px; } }
+
+@media (min-width: 1280px) {
+  .intro {
+    position: relative;
+    margin-top: -667px;
+    padding-bottom: 178px;
+    background-size: cover;
+    background-position: 50% 0; } }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="557px" height="800px" viewBox="0 0 557 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>background-img</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="557" height="800"></rect>
+        <pattern id="pattern-3" width="4.65073529" height="4.65073529" x="-4.65073529" y="-4.65073529" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-4" transform="scale(0.116268382,0.116268382)"></use>
+        </pattern>
+        <image id="image-4" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAIFJREFUWAntl8ENwCAMA6Nux/4jMEgbQzMAUh5GOn/Kp9JxfOx4d2aYJbGm0OI/DDM+cQ2xuXHBgwEMYAADGMAABjBwqYEqmK4FuJp58q20NeHn0gc7x05va0PkV2PHbuOc34g/MIABDGAAAxjAAAYsDLgWzCrA2hJK24bosi4mgX3ui2hbDzAPzAAAAABJRU5ErkJggg=="></image>
+        <pattern id="pattern-5" width="4.65073529" height="4.65073529" x="106.349265" y="86.3492647" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-6" transform="scale(0.116268382,0.116268382)"></use>
+        </pattern>
+        <image id="image-6" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAIFJREFUWAntl8ENwCAMA6Nux/4jMEgbQzMAUh5GOn/Kp9JxfOx4d2aYJbGm0OI/DDM+cQ2xuXHBgwEMYAADGMAABjBwqYEqmK4FuJp58q20NeHn0gc7x05va0PkV2PHbuOc34g/MIABDGAAAxjAAAYsDLgWzCrA2hJK24bosi4mgX3ui2hbDzAPzAAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="background-img">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="overflow-hidden" fill-rule="nonzero"></g>
+            <g id="pattern" opacity="0.5" mask="url(#mask-2)" fill-rule="nonzero">
+                <polygon id="Path-2" fill="url(#pattern-3)" points="351 42.302816 308.696923 0 0 358.119282 0 873 57.5004543 824.003605 57.5004543 377.017797"></polygon>
+                <polygon id="Path-3" fill="url(#pattern-5)" points="372.540282 91 111 404.386764 111 859 171.72788 813.570275 171.72788 425.959464 340.555851 213.316406 340.555851 813.570275 404.778191 814.570275 404.778191 231.245622 494.341812 366.929455 494.341812 813.570275 557 859 557 338.325716"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
