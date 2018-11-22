@@ -65,6 +65,11 @@
   .intro__descriptor {
     width: 640px;
   }
+
+  .intro__control {
+    top: 322px;
+    z-index: 1;
+  }
 }
 
 @media (min-width: $width__desktop) {

@@ -127,12 +127,12 @@ a {
 
 .container {
   min-width: 375px;
-  padding: 0 3.73333%; }
+  padding: 0 4%; }
 
 @media (min-width: 1280px) {
   .container {
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 33px;
     min-width: 1280px; } }
 
 .header > .container {
@@ -214,7 +214,7 @@ a {
       content: "";
       right: 32px; }
   .header__icon {
-    margin-left: 2px;
+    margin-left: 1px;
     width: 75px;
     height: 63px; }
   .header__phone {
@@ -247,13 +247,17 @@ a {
   color: white;
   opacity: 0.5; }
 
+.nav__link:hover {
+  color: #bb9b6a;
+  opacity: 1; }
+
 @media (min-width: 768px) {
   .nav__list {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
   .nav__item:not(:last-of-type) {
-    margin-right: 50px; } }
+    margin-right: 55px; } }
 
 @media (min-width: 1280px) {
   .nav {
@@ -352,7 +356,10 @@ a {
     background-position: 50% 0; }
   .intro__heading,
   .intro__descriptor {
-    width: 640px; } }
+    width: 640px; }
+  .intro__control {
+    top: 322px;
+    z-index: 1; } }
 
 @media (min-width: 1280px) {
   .intro {
@@ -390,3 +397,127 @@ a {
 @media (min-width: 768px) {
   .control {
     display: block; } }
+
+.info > .container {
+  padding-top: 61px;
+  padding-bottom: 55px; }
+
+.info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.info__label {
+  display: none; }
+
+.info__img {
+  display: none; }
+
+.info__heading,
+.info__subheading,
+.info__descriptor {
+  width: 345px; }
+
+.info__heading {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin: 5px auto 0 auto;
+  font-family: "Tinos", "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #0e1c2c;
+  letter-spacing: 1px; }
+
+.info__subheading {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 0 auto;
+  font-family: "Tinos", "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #bb9b6a;
+  font-style: italic;
+  letter-spacing: 0.45px; }
+
+.info__descriptor {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  margin: 18px auto 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #63666c; }
+
+@media (min-width: 768px) {
+  .info > .container {
+    position: relative;
+    background-image: url("../img/logo.svg");
+    background-size: 960px 805px;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 300px) 0; }
+  .info__heading,
+  .info__subheading,
+  .info__descriptor {
+    width: 640px; }
+  .info__control {
+    top: 170px; } }
+
+@media (min-width: 1280px) {
+  .info > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 201px;
+    padding-bottom: 205px;
+    background-position: calc(50% - 480px) 0; }
+    .info > .container::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: 33px;
+      width: 1px;
+      height: 200px;
+      background-color: #bb9b6a; }
+  .info__label {
+    position: absolute;
+    top: -99px;
+    right: 62px;
+    display: block;
+    font-family: "Tinos", "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #bb9b6a;
+    font-style: italic;
+    letter-spacing: 0.45px; }
+  .info__img {
+    display: block;
+    margin-top: 4px;
+    margin-left: calc(50% - 590px); }
+  .info__wrapper {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .info__heading,
+  .info__subheading,
+  .info__descriptor {
+    margin-left: 0;
+    margin-right: 110px;
+    width: 530px; }
+  .info__descriptor {
+    margin-top: 48px; }
+  .info__control {
+    top: 338px; } }

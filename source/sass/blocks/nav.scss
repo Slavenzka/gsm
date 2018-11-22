@@ -23,13 +23,18 @@
   opacity: 0.5;
 }
 
+.nav__link:hover {
+  color: $color__highlight;
+  opacity: 1;
+}
+
 @media (min-width: $width__tablet) {
   .nav__list {
     justify-content: flex-start;
   }
 
   .nav__item:not(:last-of-type) {
-    margin-right: 50px;
+    margin-right: 55px;
   }
 }
 

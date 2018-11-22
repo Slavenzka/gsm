@@ -32,13 +32,13 @@ a {
 
 .container {
   min-width: $width__mobile;
-  padding: 0 100% * 14 / 375;
+  padding: 0 100% * 15 / 375;
 }
 
 @media (min-width: $width__desktop) {
   .container {
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 33px;
     min-width: $width__desktop;
   }
 }
