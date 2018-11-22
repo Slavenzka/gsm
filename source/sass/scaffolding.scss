@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  font-size: 0;
+}
+
+.hide-input {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  opacity: 0;
+}
+
+.container {
+  width: $width__desktop;
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 50px;
+  left: 5px;
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-image: url("../img/scroll-top__bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+  transform: translateY(-100px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-top-active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.button-colors {
+  display: block;
+  margin: 0;
+  margin-top: calc(5em / 2);
+  padding: 0 calc(2em / 2);
+  font-size: 2em;
+  font-weight: 700;
+  line-height: calc(6em / 2);
+  background-color: transparent;
+  background-image: linear-gradient(to top, #e88900 -20%, #f6b100 10, #ffed61 111.12%, #fffce5 125%);
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+a.button-shine {
+  display: inline-block;
+  padding: calc(1.5em / 2) calc(2.5em / 2);
+  width: calc(32em / 2);
+  font-size: 2em;
+  font-weight: 300;
+  line-height: normal;
+  color: $font-color__light;
+  text-align: center;
+  text-decoration: none;
+  background-color: $background__button-shining;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 $background__button-shining;
+  vertical-align: middle;
+}
+
+@media (max-width: $width__tablet-max) {
+  .container {
+    margin: 0;
+    padding: 0 100% * 30 / 768;
+    min-width: $width__tablet;
+    width: auto;
+  }
+
+  .scroll-top {
+    display: none;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .container {
+    padding: 0 100% * 10 / 320;
+    min-width: $width__mobile;
+  }
+}
