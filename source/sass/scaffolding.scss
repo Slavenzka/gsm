@@ -78,7 +78,7 @@ a {
   .container {
     margin: 0 auto;
     padding: 0 33px;
-    min-width: $width__desktop;
+    max-width: $width__desktop-max;
   }
 
   .label {

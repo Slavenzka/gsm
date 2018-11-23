@@ -170,7 +170,7 @@ a {
   .container {
     margin: 0 auto;
     padding: 0 33px;
-    min-width: 1280px; }
+    max-width: 1600px; }
   .label {
     position: absolute;
     top: -99px;
@@ -704,10 +704,11 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 0;
-    padding: 0 28px 0 0; }
+    padding: 0 60px 0 20px; }
   .portfolio__item {
     margin-right: 0; }
   .portfolio__item:first-of-type {

@@ -174,9 +174,9 @@
   .portfolio__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 0;
-    padding: 0 28px 0 0;
+    padding: 0 60px 0 20px;
   }
 
   .portfolio__item {
