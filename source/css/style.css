@@ -161,6 +161,24 @@ a {
   font-style: italic;
   letter-spacing: 0.45px; }
 
+.slick-arrow {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 61px;
+  height: 10px;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("../img/arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0;
+  z-index: 1; }
+
+.slick-next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
 @media (min-width: 768px) {
   .heading,
   .subheading {
@@ -530,11 +548,10 @@ a {
 
 .portfolio {
   position: relative;
-  padding-top: 61px;
-  padding-bottom: 59px;
   background-color: #0e1c2c; }
 
 .portfolio > .container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,6 +559,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 61px;
+  padding-bottom: 59px;
   background-image: url("../img/portfolio-left-pattern.svg");
   background-size: cover;
   background-repeat: no-repeat; }
@@ -603,26 +622,11 @@ a {
      object-position: 15% 50%; }
 
 .portfolio__slider .slick-arrow {
-  position: absolute;
   bottom: -26px;
-  right: 1px;
-  margin: 0;
-  padding: 0;
-  width: 61px;
-  height: 10px;
-  font-size: 0;
-  background-color: transparent;
-  background-image: url("../img/arrow.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 0; }
+  right: 1px; }
 
 .portfolio__slider .slick-prev {
   right: 82px; }
-
-.portfolio__slider .slick-next {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
 
 .portfolio__slider .slick-dots {
   display: -webkit-box;
@@ -695,7 +699,7 @@ a {
     top: 200px; } }
 
 @media (min-width: 1280px) {
-  .portfolio {
+  .portfolio > .container {
     padding-top: 118px;
     padding-bottom: 36px; }
   .portfolio__list {
@@ -729,3 +733,111 @@ a {
     max-width: 345px; }
   .portfolio__control {
     top: 362px; } }
+
+.consultants > .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 41px; }
+
+.consultants__wrapper {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  position: relative;
+  margin: 24px auto 0 auto;
+  width: 345px; }
+
+.consultants__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.consultants .slick-arrow {
+  top: 0; }
+
+.consultants .slick-prev {
+  left: 0; }
+
+.consultants .slick-next {
+  right: 0; }
+
+.consultants__frame {
+  padding-top: 201px;
+  padding-bottom: 221px;
+  padding-left: 56px;
+  width: 345px; }
+
+.consultants__item--NC .consultants__frame {
+  background-image: url("../img/consultant N.svg"), url("../img/consultant c.svg");
+  background-size: 125px 122px, 125px 123px;
+  background-repeat: no-repeat;
+  background-position: 17px 115px, 211px 293px; }
+
+.consultants__item--HH .consultants__frame {
+  background-image: url("../img/consultant H.svg"), url("../img/consultant H.svg");
+  background-size: 125px 122px, 125px 123px;
+  background-repeat: no-repeat;
+  background-position: 17px 115px, 211px 293px; }
+
+.consultants__item--DN .consultants__frame {
+  background-image: url("../img/consultant D.svg"), url("../img/consultant N.svg");
+  background-size: 125px 122px, 125px 123px;
+  background-repeat: no-repeat;
+  background-position: 17px 115px, 211px 293px; }
+
+.consultants__name {
+  margin: 0;
+  font-family: "Tinos", "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #0e1c2c;
+  font-style: italic;
+  letter-spacing: 0.6px; }
+
+.consultants__rank {
+  display: block;
+  margin-top: 14px;
+  min-height: 40px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #63666c; }
+
+.consultants__mail {
+  display: block;
+  margin-top: 11px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 32px;
+  color: #bb9b6a; }
+
+@media (min-width: 768px) {
+  .consultants__heading,
+  .consultants__subheading {
+    width: 100%; }
+  .consultants__wrapper {
+    margin: 0 auto;
+    width: 100%; } }
+
+@media (min-width: 1280px) {
+  .consultants > .container {
+    padding-top: 91px; }
+  .consultants__frame {
+    position: relative; }
+    .consultants__frame::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 1px;
+      background-color: #bb9b6a; } }
