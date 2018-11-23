@@ -32,14 +32,14 @@
 
 .consultants__frame {
   padding-top: 201px;
-  padding-bottom: 221px;
+  padding-bottom: 240px;
   padding-left: 56px;
   width: 345px;
 }
 
 
 .consultants__item--NC .consultants__frame {
-  background-image: url("../img/consultant N.svg"), url("../img/consultant c.svg");
+  background-image: url("../img/consultant N.svg"), url("../img/consultant C.svg");
   background-size: 125px 122px, 125px 123px;
   background-repeat: no-repeat;
   background-position: 17px 115px, 211px 293px;
@@ -92,6 +92,13 @@
 }
 
 @media (min-width: $width__tablet) {
+  .consultants > .container {
+    background-image: url("../img/man-bg_consultant.svg");
+    background-size: calc(357px * 0.83) calc(856px * 0.83);
+    background-position: 100% 115px;
+    background-repeat: no-repeat;
+  }
+
   .consultants__heading,
   .consultants__subheading {
     width: 100%;
@@ -101,24 +108,36 @@
     margin: 0 auto;
     width: 100%;
   }
+
+  .consultants .slick-arrow {
+    top: 30px;
+  }
 }
 
 @media (min-width: $width__desktop) {
   .consultants > .container {
     padding-top: 91px;
+    background-size: calc(357px * 0.83) calc(856px * 0.83);
+    background-position: 804px 115px;
   }
 
   .consultants__frame {
     position: relative;
+    padding-bottom: 330px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 117px;
+      right: 20px;
       width: 30px;
       height: 1px;
       background-color: $color__highlight;
+      opacity: 0.5;
     }
+  }
+
+  .consultants__control {
+    top: 312px;
   }
 }
