@@ -708,7 +708,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 0;
-    padding: 0 60px 0 20px; }
+    padding: 0 calc(100% * 60 / 1300) 0 calc(100% * 20 / 1300); }
   .portfolio__item {
     margin-right: 0; }
   .portfolio__item:first-of-type {
