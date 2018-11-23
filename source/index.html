@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
   <title>GSM main page</title>
 </head>
 
@@ -18,146 +19,240 @@
     </symbol>
   </svg>
 
-    <header class="header">
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              About
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              Portfolio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              Team
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+            Contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__link">
+        GSM ltd. logo
+        <svg class="header__icon" viewbox="0 0 76 63">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
+      <span class="header__phone">
+        +357 (22) 444 500
+      </span>
+      <aside class="header__lang lang">
+        <ul class="lang__list">
+          <li class="lang__item lang__item--en lang__item--active">
+            <a href="#" class="lang__link">
+              eng
+            </a>
+          </li>
+          <li class="lang__item lang__item--ell">
+            <a href="#" class="lang__link">
+              ell
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">
+      Global Space Management Limited company page
+    </h1>
+    <section class="intro" id="intro">
       <div class="container">
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                Portfolio
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-                Team
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">
-              Contacts
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <a class="header__link">
-          GSM ltd. logo
-          <svg class="header__icon" viewbox="0 0 76 63">
-            <use xlink:href="#logo"></use>
-          </svg>
-        </a>
-        <span class="header__phone">
-          +357 (22) 444 500
-        </span>
-        <aside class="header__lang lang">
-          <ul class="lang__list">
-            <li class="lang__item lang__item--en lang__item--active">
-              <a href="#" class="lang__link">
-                eng
-              </a>
-            </li>
-            <li class="lang__item lang__item--ell">
-              <a href="#" class="lang__link">
-                ell
-              </a>
-            </li>
-          </ul>
-        </aside>
+        <h2 class="intro__heading">
+          Global Space Management Limited
+        </h2>
+        <p class="intro__descriptor">
+          Global Space Management Limited performs professional business activities related to the construction and execution of any work of any kind in any part of the world
+        </p>
+        <ul class="intro__control control">
+          <li class="control__item control__item control__item--active">
+            <a class="control__link">
+              Section #1 - Intro
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#info" class="control__link">
+              Section #2 - Info
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#" class="control__link">
+              Section #3 - Portfolio
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#" class="control__link">
+              Section #4 - Consultants & Team
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#" class="control__link">
+              Section #5 - Contacts
+            </a>
+          </li>
+        </ul>
       </div>
-    </header>
-
-    <main>
-      <h1 class="visually-hidden">
-        Global Space Management Limited company page
-      </h1>
-      <section class="intro" id="intro">
-        <div class="container">
-          <h2 class="intro__heading">
-            Global Space Management Limited
+    </section>
+    <section class="info" id="info">
+      <div class="container">
+        <span class="label info__label">
+          about
+        </span>
+        <img src="img/info__img.png" alt="Illustration for About us section" class="info__img" width="520" height="390">
+        <div class="info__wrapper">
+          <h2 class="heading info__heading">
+            About us
           </h2>
-          <p class="intro__descriptor">
-            Global Space Management Limited performs professional business activities related to the construction and execution of any work of any kind in any part of the world
+          <h3 class="subheading info__subheading">
+            Company
+          </h3>
+          <p class="info__descriptor">
+            The main activities of the Global Space Management Limited are to acquire by buying, hiring, exchanging, lending or otherwise immovable property of any kind or any interest therein in any place of the world, to erect and build houses, buildings or any ventures on land belonging to the Global Space Management Limited or any other land or other property, to demolish re-erect expand, modify and improve the present houses, buildings or ventures and to provide the commercial real estate transactions.
           </p>
-          <ul class="intro__control control">
-            <li class="control__item control__item control__item--active">
-              <a class="control__link">
-                Section #1 - Intro
-              </a>
-            </li>
-            <li class="control__item">
-              <a href="#info" class="control__link">
-                Section #2 - Info
-              </a>
-            </li>
-            <li class="control__item">
-              <a href="#" class="control__link">
-                Section #3 - Portfolio
-              </a>
-            </li>
-            <li class="control__item">
-              <a href="#" class="control__link">
-                Section #4 - Consultants & Team
-              </a>
-            </li>
-            <li class="control__item">
-              <a href="#" class="control__link">
-                Section #5 - Contacts
-              </a>
-            </li>
-          </ul>
         </div>
-      </section>
-      <section class="info" id="info">
-        <div class="container">
-          <span class="info__label">
-            about
-          </span>
-          <img src="img/info__img.png" alt="Illustration for About us section" class="info__img" width="520" height="390">
-          <div class="info__wrapper">
-            <h2 class="info__heading">
-              About us
-            </h2>
-            <h3 class="info__subheading">
-              Company
-            </h3>
-            <p class="info__descriptor">
-              The main activities of the Global Space Management Limited are to acquire by buying, hiring, exchanging, lending or otherwise immovable property of any kind or any interest therein in any place of the world, to erect and build houses, buildings or any ventures on land belonging to the Global Space Management Limited or any other land or other property, to demolish re-erect expand, modify and improve the present houses, buildings or ventures and to provide the commercial real estate transactions.
-            </p>
-          </div>
-          <ul class="info__control control">
-            <li class="control__item control__item">
-              <a href="#intro" class="control__link">
-                Section #1 - Intro
-              </a>
-            </li>
-            <li class="control__item control__item--active">
-              <a class="control__link">
-                Section #2 - Info
-              </a>
-            </li>
-            <li class="control__item">
-              <a href="#" class="control__link">
-                Section #3 - Portfolio
-              </a>
-            </li>
-            <li class="control__item">
-              <a href="#" class="control__link">
-                Section #4 - Consultants & Team
-              </a>
-            </li>
-            <li class="control__item">
-              <a href="#" class="control__link">
-                Section #5 - Contacts
-              </a>
-            </li>
-        </div>
-      </section>
-    </main>
+        <ul class="info__control control">
+          <li class="control__item control__item">
+            <a href="#intro" class="control__link">
+              Section #1 - Intro
+            </a>
+          </li>
+          <li class="control__item control__item--active">
+            <a class="control__link">
+              Section #2 - Info
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#" class="control__link">
+              Section #3 - Portfolio
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#" class="control__link">
+              Section #4 - Consultants & Team
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#" class="control__link">
+              Section #5 - Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <span class="label portfolio__label">
+          portfolio
+        </span>
+        <h2 class="heading portfolio__heading">
+          Portfolio
+        </h2>
+        <h3 class="subheading portfolio__subheading">
+          Projects
+        </h3>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <h4 class="portfolio__project">
+              Barbarusa
+            </h4>
+            <div class="portfolio__wrapper portfolio__wrapper--1">
+              <ul class="portfolio__slider">
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <h4 class="portfolio__project">
+              Park Avenue VIP
+            </h4>
+            <div class="portfolio__wrapper portfolio__wrapper--2">
+              <ul class="portfolio__slider">
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="portfolio__control control">
+          <li class="control__item control__item">
+            <a href="#intro" class="control__link">
+              Section #1 - Intro
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#info" class="control__link">
+              Section #2 - Info
+            </a>
+          </li>
+          <li class="control__item control__item--active">
+            <a class="control__link">
+              Section #3 - Portfolio
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#" class="control__link">
+              Section #4 - Consultants & Team
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#" class="control__link">
+              Section #5 - Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="js/slider-init.js"></script>
 </body>
 
 </html>

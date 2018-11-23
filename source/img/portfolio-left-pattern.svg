@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="651px" height="799px" viewBox="0 0 651 799" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>portfolio-left pattern</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="651" height="800"></rect>
+        <pattern id="pattern-3" width="4.65073529" height="4.65073529" x="-4.65073529" y="-4.65073529" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-4" transform="scale(0.116268382,0.116268382)"></use>
+        </pattern>
+        <image id="image-4" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAIFJREFUWAntl8ENwCAMA6Nux/4jMEgbQzMAUh5GOn/Kp9JxfOx4d2aYJbGm0OI/DDM+cQ2xuXHBgwEMYAADGMAABjBwqYEqmK4FuJp58q20NeHn0gc7x05va0PkV2PHbuOc34g/MIABDGAAAxjAAAYsDLgWzCrA2hJK24bosi4mgX3ui2hbDzAPzAAAAABJRU5ErkJggg=="></image>
+        <pattern id="pattern-5" width="4.65073529" height="4.65073529" x="128.363971" y="107.349265" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-6" transform="scale(0.116268382,0.116268382)"></use>
+        </pattern>
+        <image id="image-6" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAIFJREFUWAntl8ENwCAMA6Nux/4jMEgbQzMAUh5GOn/Kp9JxfOx4d2aYJbGm0OI/DDM+cQ2xuXHBgwEMYAADGMAABjBwqYEqmK4FuJp58q20NeHn0gc7x05va0PkV2PHbuOc34g/MIABDGAAAxjAAAYsDLgWzCrA2hJK24bosi4mgX3ui2hbDzAPzAAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="portfolio-left-pattern" transform="translate(0.000000, -1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask" fill-rule="nonzero"></g>
+            <g id="pattern" opacity="0.2" mask="url(#mask-2)" fill-rule="nonzero">
+                <g transform="translate(-19.000000, -63.000000)">
+                    <polygon id="Path-2" fill="url(#pattern-3)" points="421.705882 51.6065281 370.88122 0 0 436.880911 0 1065 69.0834182 1005.22777 69.0834182 459.9358"></polygon>
+                    <polygon id="Path-3" fill="url(#pattern-5)" points="447.909964 112 133.014706 494.348174 133.014706 1049 206.131249 993.573369 206.131249 520.667992 409.400617 261.232386 409.400617 993.573369 486.724501 994.793422 486.724501 283.106963 594.55936 448.648306 594.55936 993.573369 670 1049 670 413.750255"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
