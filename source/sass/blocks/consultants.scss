@@ -1,0 +1,124 @@
+.consultants > .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 41px;
+}
+
+.consultants__wrapper {
+  order: 3;
+  position: relative;
+  margin: 24px auto 0 auto;
+  width: 345px;
+}
+
+.consultants__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.consultants .slick-arrow {
+  top: 0;
+}
+
+.consultants .slick-prev {
+  left: 0;
+}
+
+.consultants .slick-next {
+  right: 0;
+}
+
+.consultants__frame {
+  padding-top: 201px;
+  padding-bottom: 221px;
+  padding-left: 56px;
+  width: 345px;
+}
+
+
+.consultants__item--NC .consultants__frame {
+  background-image: url("../img/consultant N.svg"), url("../img/consultant c.svg");
+  background-size: 125px 122px, 125px 123px;
+  background-repeat: no-repeat;
+  background-position: 17px 115px, 211px 293px;
+}
+
+.consultants__item--HH .consultants__frame {
+  background-image: url("../img/consultant H.svg"), url("../img/consultant H.svg");
+  background-size: 125px 122px, 125px 123px;
+  background-repeat: no-repeat;
+  background-position: 17px 115px, 211px 293px;
+}
+
+.consultants__item--DN .consultants__frame {
+  background-image: url("../img/consultant D.svg"), url("../img/consultant N.svg");
+  background-size: 125px 122px, 125px 123px;
+  background-repeat: no-repeat;
+  background-position: 17px 115px, 211px 293px;
+}
+
+.consultants__name {
+  margin: 0;
+  font-family: $font-family__heading;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color__heading;
+  font-style: italic;
+  letter-spacing: 0.6px;
+}
+
+.consultants__rank {
+  display: block;
+  margin-top: 14px;
+  min-height: 40px;
+  font-family: $font-family__main;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  color: $color__descriptor;
+}
+
+.consultants__mail {
+  display: block;
+  margin-top: 11px;
+  font-family: $font-family__main;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 32px;
+  color: $color__highlight;
+}
+
+@media (min-width: $width__tablet) {
+  .consultants__heading,
+  .consultants__subheading {
+    width: 100%;
+  }
+
+  .consultants__wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .consultants > .container {
+    padding-top: 91px;
+  }
+
+  .consultants__frame {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 1px;
+      background-color: $color__highlight;
+    }
+  }
+}
