@@ -70,14 +70,15 @@ a {
 .slick-arrow {
   position: absolute;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
   width: 61px;
   height: 10px;
   font-size: 0;
   background-color: transparent;
   background-image: url("../img/arrow.svg");
-  background-size: cover;
+  background-size: auto cover;
   background-repeat: no-repeat;
+  background-position: 0 50%;
   border: 0;
   z-index: 1;
 }
@@ -86,10 +87,44 @@ a {
   transform: rotate(180deg);
 }
 
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slick-dots button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 2px;
+  font-size: 0;
+  background-color: $color__highlight;
+  border: none;
+  opacity: 0.5;
+}
+
+.slick-dots li:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.slick-active button {
+  opacity: 1;
+}
+
 @media (min-width: $width__tablet) {
   .heading,
   .subheading {
     width: 640px;
+  }
+
+  .slick-dots {
+    bottom: 91px;
   }
 }
 

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <title>GSM main page</title>
+</head>
+
+<body>
+  <svg style="display: none">
+    <symbol id="logo">
+      <path d="M27.1812081,52.9941176 L17.823254,52.9941176 C15.7765517,52.9941176 14.1173716,54.6532977 14.1173716,56.7 C14.1173716,58.7467023 15.7765517,60.4058824 17.823254,60.4058824 L27.1812081,60.4058824 L27.1812081,63 L17.8771812,63 C14.3977873,63 11.5771812,60.1793939 11.5771812,56.7 C11.5771812,53.2206061 14.3977873,50.4 17.8771812,50.4 L27.1812081,50.4 L27.1812081,52.9941176 Z"></path>
+      <path d="M42.9929133,9.80722706 L33.0206334,22.3625908 L33.0206334,43.9202428 C32.2447136,43.9956293 31.4586887,44.0785928 30.6627379,44.1693344 L30.6627379,42.6188328 C30.6629181,42.6188115 30.6631885,35.5584888 30.663549,21.4378645 L44.1425238,5.04 L53.3278216,17.9883552 L53.3278216,41.9217873 C68.7797635,42.6504075 75,46.5126122 75,51.3201478 C75,56.1276835 71.2649721,60.3163052 60.9430172,63 L60.9430172,56.095674 C60.9430172,54.4901355 59.6441832,53.1885893 58.0419903,53.1885893 L56.772791,53.1885893 C55.8715575,53.1885893 55.1409634,53.920709 55.1409634,54.8238245 L55.1409634,63 L53.5997929,63 L52.6025649,63 L52.6025649,56.095674 C52.6025649,54.4901355 51.7732105,53.1885893 50.1710176,53.1885893 L48.9018183,53.1885893 C48.0005848,53.1885893 47.2699907,53.920709 47.2699907,54.8238245 L47.2699907,63 L44.715398,63 L44.715398,55.1805613 C44.4803227,54.4477328 44.1079263,53.9654349 43.5982088,53.7336677 C43.0654213,53.4914107 42.5427265,53.3702821 42.0301244,53.3702821 L37.9161163,53.3702821 L32.7486621,53.3702821 C32.0977712,53.3702821 31.5701199,53.8990352 31.5701199,54.5512853 C31.5701199,55.2035353 32.0977712,55.7322884 32.7486621,55.7322884 L37.9161163,55.7322884 L39.7292581,55.7322884 C41.7319992,55.7322884 43.3555417,57.3592211 43.3555417,59.3661442 C43.3555417,61.3730673 41.7319992,63 39.7292581,63 L36.4656028,63 L31.7514341,63 C31.6912898,62.9988034 31.6308443,63 31.5701199,63 C29.0666935,63 27.0372654,60.9663342 27.0372654,58.4576803 L27.0372654,58.2759875 L18.5154989,58.2759875 L18.5154989,55.7322884 L29.2130356,55.7322884 L29.2130356,56.095674 L29.2130356,57.7295734 C29.257499,59.2886037 30.3499161,60.4810063 31.7514341,60.6956848 L36.4656028,60.6379937 L39.7292581,60.6379937 C40.4302175,60.6379937 40.9984573,60.0685673 40.9984573,59.3661442 C40.9984573,58.6637211 40.4302175,58.0942947 39.7292581,58.0942947 L36.4656028,58.0942947 L32.7486621,58.0942947 C30.7959895,58.0942947 29.2130356,56.5080353 29.2130356,54.5512853 C29.2130356,52.5945352 30.7959895,51.0082759 32.7486621,51.0082759 L37.9161163,51.0082759 L41.9965706,51.0082759 C42.9025513,51.0082759 43.6983093,51.1584741 44.3838445,51.4588704 C44.9873525,51.7233231 45.3597023,52.0811701 45.5008939,52.5324115 C46.2278621,51.5523808 47.3920902,50.9174295 48.70431,50.9174295 L50.3361376,50.9174295 C51.8019477,50.9174295 53.0420585,51.8857805 53.4541685,53.2189232 C53.8316978,51.9407934 55.0122566,51.0082759 56.4101627,51.0082759 L58.4046187,51.0082759 C61.2084563,51.0082759 63.4814157,53.2859816 63.4814157,56.095674 L63.4814157,60.9048848 C68.6542998,58.3102159 71.0984124,55.1296996 70.703882,51.8656387 C70.2110858,47.7885985 63.100643,44.4188155 50.9707373,43.5486445 L50.9707373,18.7445168 L45.5313118,11.0048314 L45.5313118,42.6504075 L42.9929133,42.6504075 L42.9929133,9.80722706 Z M27.8229211,44.394749 C16.6184226,45.8583329 6.72881005,48.4427524 0,50.8163718 C0.0438430691,50.7881315 0.0855836746,50.7596171 0.132491299,50.7317789 C5.29960867,47.6652567 13.7110432,44.7953546 25.3533854,43.2419549"></path>
+      <polyline points="25.1677852 42.8760023 25.1677852 18.7046263 40.3607556 0 41.7785235 2.02256464 27.490174 19.6134788 27.490174 42.6051217 27.490174 44.352"></polyline>
+      <path d="M50.8576054,41.7763828 C37.6461567,42.3138516 31.0404323,42.5825859 31.0404323,42.5825859 C31.0404323,42.5825859 31.0404323,43.1118516 31.0404323,44.1703828 C36.9744354,43.7034609 41.001281,43.47 43.1209692,43.47 C48.3036323,43.47 51.1256685,43.47 51.5870779,43.47 C52.4571361,43.47 52.2139786,42.9054609 50.8576054,41.7763828 Z"></path>
+    </symbol>
+    <symbol id="address">
+      <path d="M11.4939948,0 C5.16449086,0 0.0120104439,5.2163522 0.0120104439,11.6243187 C0.0120104439,12.3538784 0.0780678851,13.0895178 0.21618799,13.8069182 C0.222193211,13.8494759 0.246214099,13.9771488 0.294255875,14.1960168 C0.468407311,14.9802935 0.726631854,15.7524109 1.06292428,16.4880503 C2.3,19.4366876 5.02036554,23.9660377 10.9895561,28.8176101 C11.1396867,28.9392034 11.3198433,29 11.5,29 C11.6801567,29 11.8603133,28.9392034 12.0104439,28.8176101 C17.9736292,23.9660377 20.7,19.4366876 21.9370757,16.4880503 C22.2733681,15.7524109 22.5315927,14.9863732 22.7057441,14.1960168 C22.7537859,13.9771488 22.7778068,13.8494759 22.783812,13.8069182 C22.9159269,13.0895178 22.9879896,12.3538784 22.9879896,11.6243187 C22.9759791,5.2163522 17.8234987,0 11.4939948,0 Z M21.1744125,13.521174 C21.1744125,13.5333333 21.1684073,13.5454927 21.1684073,13.557652 C21.1624021,13.5880503 21.1443864,13.6792453 21.1143603,13.8190776 C21.1143603,13.8251572 21.1143603,13.8251572 21.1143603,13.8312369 C20.9642298,14.5121593 20.7420366,15.1748428 20.4477807,15.8132075 C20.4417755,15.8192872 20.4417755,15.8314465 20.4357702,15.8375262 C19.3127937,18.5308176 16.8506527,22.6406709 11.4939948,27.1213836 C6.13733681,22.6406709 3.67519582,18.5308176 2.55221932,15.8375262 C2.5462141,15.8314465 2.5462141,15.8192872 2.54020888,15.8132075 C2.25195822,15.1809224 2.02976501,14.5121593 1.87362924,13.8312369 C1.87362924,13.8251572 1.87362924,13.8251572 1.87362924,13.8190776 C1.83759791,13.6792453 1.82558747,13.5880503 1.81958225,13.557652 C1.81958225,13.5454927 1.81357702,13.5333333 1.81357702,13.5150943 C1.69347258,12.8888889 1.63342037,12.2566038 1.63342037,11.618239 C1.63342037,6.11614256 6.05926893,1.63542977 11.4939948,1.63542977 C16.9287206,1.63542977 21.3545692,6.11614256 21.3545692,11.618239 C21.3545692,12.2626834 21.294517,12.9010482 21.1744125,13.521174 Z"></path>
+      <path d="M11.4939948,4.37127883 C7.47650131,4.37127883 4.20365535,7.68469602 4.20365535,11.7519916 C4.20365535,15.8192872 7.47650131,19.1327044 11.4939948,19.1327044 C15.5114883,19.1327044 18.7843342,15.8192872 18.7843342,11.7519916 C18.7843342,7.68469602 15.5114883,4.37127883 11.4939948,4.37127883 Z M11.4939948,17.491195 C8.36527415,17.491195 5.82506527,14.9134172 5.82506527,11.7519916 C5.82506527,8.59056604 8.37127937,6.01278826 11.4939948,6.01278826 C14.6167102,6.01278826 17.1629243,8.59056604 17.1629243,11.7519916 C17.1629243,14.9134172 14.6227154,17.491195 11.4939948,17.491195 Z"></path>
+    </symbol>
+    <symbol id="phone">
+      <path d="M22.9097553,17.9571181 C22.3162954,17.3391857 21.6004726,17.0088059 20.8418228,17.0088059 C20.0892911,17.0088059 19.3673502,17.3330675 18.7494177,17.951 L16.8160844,19.8782152 C16.6570127,19.7925612 16.4979409,19.7130253 16.3449873,19.6334895 C16.1247342,19.5233629 15.9167173,19.4193544 15.7392911,19.3092278 C13.9283207,18.1590169 12.2825401,16.6600717 10.7040591,14.7206203 C9.93929114,13.7539536 9.42536709,12.9402405 9.05216034,12.1142911 C9.5538481,11.6554304 10.018827,11.1782152 10.4715696,10.7193544 C10.6428776,10.5480464 10.8141857,10.3706203 10.9854937,10.1993122 C12.2703038,8.91450211 12.2703038,7.25036709 10.9854937,5.96555696 L9.31524051,4.2953038 C9.12557806,4.10564135 8.92979747,3.90986076 8.74625316,3.71408017 C8.37916456,3.33475527 7.99372152,2.94319409 7.59604219,2.57610549 C7.00258228,1.98876371 6.29287764,1.6767384 5.54646414,1.6767384 C4.80005063,1.6767384 4.0781097,1.98876371 3.46629536,2.57610549 C3.46017722,2.58222363 3.46017722,2.58222363 3.45405907,2.58834177 L1.3738903,4.68686498 C0.590767932,5.46998734 0.14414346,6.42441772 0.0462531646,7.53180169 C-0.100582278,9.31829958 0.425578059,10.9824346 0.829375527,12.0714641 C1.82051477,14.7450928 3.30110549,17.2229409 5.50975527,19.8782152 C8.18950211,23.0780042 11.4137637,25.6047975 15.0968861,27.3851772 C16.5040591,28.0520549 18.3823291,28.8412954 20.4808523,28.9758945 C20.6093333,28.9820127 20.7439325,28.9881308 20.8662954,28.9881308 C22.2795865,28.9881308 23.4665063,28.4803249 24.3964641,27.4708312 C24.4025823,27.4585949 24.4148186,27.4524768 24.4209367,27.4402405 C24.7390802,27.0547975 25.1061688,26.7060633 25.4916118,26.3328565 C25.754692,26.0820127 26.0238903,25.8189325 26.2869705,25.543616 C26.8926667,24.9134473 27.2108101,24.17927 27.2108101,23.4267384 C27.2108101,22.6680886 26.8865485,21.9400295 26.268616,21.3282152 L22.9097553,17.9571181 Z M25.1000506,24.3995232 C25.0939325,24.3995232 25.0939325,24.4056414 25.1000506,24.3995232 C24.861443,24.6564852 24.6167173,24.8889747 24.3536371,25.1459367 C23.9559578,25.5252616 23.5521603,25.9229409 23.1728354,26.3695654 C22.554903,27.0303249 21.8268439,27.3423502 20.8724135,27.3423502 C20.7806414,27.3423502 20.6827511,27.3423502 20.5909789,27.3362321 C18.7738903,27.2199873 17.0852827,26.5102827 15.818827,25.9045865 C12.3559578,24.2282152 9.31524051,21.8482574 6.78844726,18.8320127 C4.70216034,16.3174557 3.30722363,13.9925612 2.38338397,11.4963586 C1.81439662,9.97294093 1.60637975,8.7860211 1.6981519,7.66640084 C1.75933333,6.95057806 2.03464979,6.35711814 2.5424557,5.84931224 L4.62874262,3.76302532 C4.92853165,3.48159072 5.24667511,3.32863713 5.55870042,3.32863713 C5.94414346,3.32863713 6.25616878,3.56112658 6.45194937,3.75690717 C6.45806751,3.76302532 6.46418565,3.76914346 6.4703038,3.7752616 C6.84351055,4.12399578 7.19836287,4.48496624 7.57156962,4.87040928 C7.76123207,5.06618987 7.95701266,5.26197046 8.15279325,5.4638692 L9.82304641,7.13412236 C10.4715696,7.78264557 10.4715696,8.38222363 9.82304641,9.03074684 C9.64562025,9.208173 9.47431224,9.38559916 9.29688608,9.55690717 C8.78296203,10.0830675 8.29351055,10.572519 7.76123207,11.0497342 C7.74899578,11.0619705 7.73675949,11.0680886 7.73064135,11.0803249 C7.20448101,11.6064852 7.30237131,12.1204093 7.41249789,12.4691435 C7.41861603,12.4874979 7.42473418,12.5058523 7.43085232,12.5242068 C7.86524051,13.5765274 8.47705485,14.5676667 9.40701266,15.7484684 L9.4131308,15.7545865 C11.1017384,17.8347553 12.8821181,19.4560633 14.8460422,20.6980464 C15.0968861,20.8571181 15.3538481,20.9855992 15.5985738,21.107962 C15.818827,21.2180886 16.0268439,21.322097 16.20427,21.4322236 C16.2287426,21.4444599 16.2532152,21.4628143 16.2776878,21.4750506 C16.4857046,21.5790591 16.6814852,21.6280042 16.883384,21.6280042 C17.3911899,21.6280042 17.7093333,21.3098608 17.8133418,21.2058523 L19.9057468,19.1134473 C20.1137637,18.9054304 20.4441435,18.6545865 20.8295865,18.6545865 C21.2089114,18.6545865 21.5209367,18.8931941 21.7105992,19.101211 C21.7167173,19.1073291 21.7167173,19.1073291 21.7228354,19.1134473 L25.0939325,22.4845443 C25.7241013,23.1085949 25.7241013,23.751 25.1000506,24.3995232 Z"></path>
+      <path d="M15.6658734,6.89551477 C17.268827,7.16471308 18.7249451,7.92336287 19.8873924,9.08581013 C21.0498397,10.2482574 21.8023713,11.7043755 22.0776878,13.3073291 C22.1449873,13.7111266 22.4937215,13.9925612 22.8914008,13.9925612 C22.940346,13.9925612 22.983173,13.986443 23.0321181,13.9803249 C23.4848608,13.9069072 23.7846498,13.4786371 23.7112321,13.0258945 C23.3808523,11.086443 22.4631308,9.31829958 21.0620759,7.91724473 C19.6610211,6.51618987 17.8928776,5.59846835 15.9534262,5.26808861 C15.5006835,5.19467089 15.0785316,5.49445992 14.9989958,5.94108439 C14.9194599,6.38770886 15.2131308,6.82209705 15.6658734,6.89551477 Z"></path>
+      <path d="M28.954481,12.7872869 C28.4099662,9.59361603 26.904903,6.68749789 24.5922447,4.37483966 C22.2795865,2.06218143 19.3734684,0.557118143 16.1797975,0.0126033755 C15.733173,-0.0669324895 15.3110211,0.238974684 15.2314852,0.685599156 C15.1580675,1.13834177 15.4578565,1.56049367 15.9105992,1.64002954 C18.761654,2.12336287 21.361865,3.47547257 23.4297975,5.53728692 C25.49773,7.60521941 26.8437215,10.2054304 27.3270549,13.0564852 C27.3943544,13.4602827 27.7430886,13.7417173 28.1407679,13.7417173 C28.1897131,13.7417173 28.2325401,13.7355992 28.2814852,13.729481 C28.7281097,13.6621814 29.0340169,13.2339114 28.954481,12.7872869 Z"></path>
+    </symbol>
+    <symbol id="fax">
+      <path d="M23.6326087,5.93809524 L22.8778261,5.93809524 L22.8778261,4.28095238 C22.8778261,1.92132505 20.93,0 18.5378261,0 L9.42565217,0 C7.03347826,0 5.08565217,1.92132505 5.08565217,4.28095238 L5.08565217,5.93809524 L4.39782609,5.93809524 C2.00565217,5.93809524 0.057826087,7.85942029 0.057826087,10.2190476 L0.057826087,17.1238095 C0.057826087,19.4834369 2.00565217,21.4047619 4.39782609,21.4047619 L5.07956522,21.4047619 L5.07956522,26.8325052 C5.07956522,28.0093168 6.05347826,28.9699793 7.24652174,28.9699793 L20.7047826,28.9699793 C21.8978261,28.9699793 22.8717391,28.0093168 22.8717391,26.8325052 L22.8717391,21.4047619 L23.6326087,21.4047619 C26.0247826,21.4047619 27.9726087,19.4834369 27.9726087,17.1238095 L27.9726087,10.2190476 C27.9726087,7.85942029 26.0247826,5.93809524 23.6326087,5.93809524 Z M6.72304348,4.28095238 C6.72304348,2.81594203 7.93434783,1.62111801 9.41956522,1.62111801 L18.5256522,1.62111801 C20.0108696,1.62111801 21.2221739,2.81594203 21.2221739,4.28095238 L21.2221739,5.93809524 L6.72304348,5.93809524 L6.72304348,4.28095238 Z M21.2282609,26.8445135 C21.2282609,27.1267081 20.9908696,27.3608696 20.7047826,27.3608696 L7.24652174,27.3608696 C6.96043478,27.3608696 6.72304348,27.1267081 6.72304348,26.8445135 L6.72304348,17.8923395 L21.2282609,17.8923395 L21.2282609,26.8445135 Z M26.3291304,17.1298137 C26.3291304,18.594824 25.1178261,19.789648 23.6326087,19.789648 L22.8778261,19.789648 L22.8778261,17.8923395 L23.9613043,17.8923395 C24.4178261,17.8923395 24.7830435,17.5320911 24.7830435,17.0817805 C24.7830435,16.63147 24.4178261,16.2712215 23.9613043,16.2712215 L3.87434783,16.2712215 C3.41782609,16.2712215 3.0526087,16.63147 3.0526087,17.0817805 C3.0526087,17.5320911 3.41782609,17.8923395 3.87434783,17.8923395 L5.08565217,17.8923395 L5.08565217,19.789648 L4.39782609,19.789648 C2.9126087,19.789648 1.70130435,18.594824 1.70130435,17.1298137 L1.70130435,10.2250518 C1.70130435,8.76004141 2.9126087,7.56521739 4.39782609,7.56521739 L23.6326087,7.56521739 C25.1178261,7.56521739 26.3291304,8.76004141 26.3291304,10.2250518 L26.3291304,17.1298137 Z"></path>
+      <path d="M8.71347826,21.879089 L19.1769565,21.879089 C19.6334783,21.879089 19.9986957,21.5188406 19.9986957,21.06853 C19.9986957,20.6182195 19.6334783,20.257971 19.1769565,20.257971 L8.71347826,20.257971 C8.25695652,20.257971 7.89173913,20.6182195 7.89173913,21.06853 C7.89173913,21.5188406 8.26304348,21.879089 8.71347826,21.879089 Z"></path>
+      <path d="M19.243913,23.5722567 L8.77434783,23.5722567 C8.31782609,23.5722567 7.9526087,23.9325052 7.9526087,24.3828157 C7.9526087,24.8331263 8.31782609,25.1933747 8.77434783,25.1933747 L19.2378261,25.1933747 C19.6943478,25.1933747 20.0595652,24.8331263 20.0595652,24.3828157 C20.0595652,23.9325052 19.6943478,23.5722567 19.243913,23.5722567 Z"></path>
+      <path d="M23.6143478,9.12028986 L21.9465217,9.12028986 C21.49,9.12028986 21.1247826,9.4805383 21.1247826,9.93084886 C21.1247826,10.3811594 21.49,10.7414079 21.9465217,10.7414079 L23.6143478,10.7414079 C24.0708696,10.7414079 24.436087,10.3811594 24.436087,9.93084886 C24.436087,9.4805383 24.0708696,9.12028986 23.6143478,9.12028986 Z"></path>
+    </symbol>
+    <symbol id="email">
+      <path d="M25.4229339,0.0447154472 L3.5411157,0.0447154472 C1.58780992,0.0447154472 0,1.62466125 0,3.56829268 L0,18.4495935 C0,20.3932249 1.58780992,21.9731707 3.5411157,21.9731707 L25.4169421,21.9731707 C27.3702479,21.9731707 28.9580579,20.3932249 28.9580579,18.4495935 L28.9580579,3.57425474 C28.9640496,1.63062331 27.3762397,0.0447154472 25.4229339,0.0447154472 Z M27.346281,18.4495935 C27.346281,19.504878 26.4834711,20.3634146 25.4229339,20.3634146 L3.5411157,20.3634146 C2.48057851,20.3634146 1.6177686,19.504878 1.6177686,18.4495935 L1.6177686,3.57425474 C1.6177686,2.51897019 2.48057851,1.6604336 3.5411157,1.6604336 L25.4169421,1.6604336 C26.4774793,1.6604336 27.3402893,2.51897019 27.3402893,3.57425474 L27.3402893,18.4495935 L27.346281,18.4495935 Z"></path>
+      <path d="M18.2628099,10.8241192 L25.3450413,4.50433604 C25.6745868,4.20623306 25.7045455,3.69945799 25.4049587,3.36558266 C25.1053719,3.03766938 24.5960744,3.00785908 24.2605372,3.30596206 L14.4940083,12.0284553 L12.5886364,10.3352304 C12.5826446,10.3292683 12.5766529,10.3233062 12.5766529,10.3173442 C12.5347107,10.2756098 12.4927686,10.2398374 12.4448347,10.204065 L4.69152893,3.3 C4.35599174,3.00189702 3.84669421,3.03170732 3.54710744,3.36558266 C3.24752066,3.69945799 3.27747934,4.20623306 3.61301653,4.50433604 L10.7791322,10.8777778 L3.64297521,17.5254743 C3.31942149,17.8295393 3.30144628,18.3363144 3.60702479,18.6642276 C3.76880165,18.8311653 3.98450413,18.9205962 4.20020661,18.9205962 C4.39793388,18.9205962 4.59566116,18.8490515 4.75144628,18.7059621 L11.9954545,11.9628726 L13.9607438,13.7097561 C14.1165289,13.8468835 14.3082645,13.9124661 14.5,13.9124661 C14.6917355,13.9124661 14.8894628,13.8409214 15.0392562,13.703794 L17.0584711,11.903252 L24.2605372,18.7119241 C24.4163223,18.8609756 24.6200413,18.9325203 24.8177686,18.9325203 C25.0334711,18.9325203 25.2431818,18.8490515 25.4049587,18.6821138 C25.7105372,18.3601626 25.6985537,17.8474255 25.375,17.5433604 L18.2628099,10.8241192 Z"></path>
+    </symbol>
+  </svg>
+
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#info" class="nav__link">
+              Σχετικά με
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              Χαρτοφυλάκιο
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#consultants" class="nav__link">
+              Ομάδα
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">
+            Επαφές
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__link">
+        GSM ltd. logo
+        <svg class="header__icon" viewbox="0 0 76 63">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
+      <span class="header__phone">
+        +357 (22) 444 500
+      </span>
+      <aside class="header__lang lang">
+        <ul class="lang__list">
+          <li class="lang__item lang__item--en">
+            <a href="index-en.html" class="lang__link">
+              eng
+            </a>
+          </li>
+          <li class="lang__item lang__item--ell lang__item--active">
+            <a class="lang__link">
+              ell
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">
+      Global Space Management Limited company page
+    </h1>
+    <section class="intro" id="intro">
+      <div class="container">
+        <h2 class="intro__heading">
+          Global Space Management Limited
+        </h2>
+        <p class="intro__descriptor">
+          Global Space Management Limited εκτελεί επαγγελματικές επιχειρηματικές δραστηριότητες σχετικές με την κατασκευή και την εκτέλεση οποιασδήποτε εργασίας οποιασδήποτε μορφής σε οποιοδήποτε μέρος του κόσμου
+        </p>
+        <ul class="intro__control control">
+          <li class="control__item control__item control__item--active">
+            <a class="control__link">
+              Section #1 - Intro
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#info" class="control__link">
+              Section #2 - Info
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#portfolio" class="control__link">
+              Section #3 - Portfolio
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#consultants" class="control__link">
+              Section #4 - Consultants & Team
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#contacts" class="control__link">
+              Section #5 - Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="info" id="info">
+      <div class="container">
+        <span class="label info__label">
+          σχετικά με
+        </span>
+        <img src="img/info__img.png" alt="Illustration for About us section" class="info__img" width="520" height="390">
+        <div class="info__wrapper">
+          <h2 class="heading info__heading">
+            Σχετικά με εμάς
+          </h2>
+          <h3 class="subheading info__subheading">
+            Εταιρία
+          </h3>
+          <p class="info__descriptor">
+            Οι κύριες δραστηριότητες της Global Space Management Limited είναι να αποκτήσουν με την αγορά, μίσθωση, ανταλλαγή, δανεισμό ή άλλη ακίνητη περιουσία οποιουδήποτε είδους ή οποιουδήποτε ενδιαφέροντος σε οποιοδήποτε μέρος του κόσμου, να ανεγείρουν και να χτίζουν σπίτια, κτίρια ή οποιεσδήποτε επιχειρήσεις στην ξηρά που ανήκουν στην Global Space Management Limited ή σε οποιαδήποτε άλλη γη ή άλλη ιδιοκτησία, να κατεδαφίσουν την εκ νέου επένδυση, να τροποποιήσουν και να βελτιώσουν τα σημερινά σπίτια, κτίρια ή επιχειρήσεις και να παράσχουν τις εμπορικές συναλλαγές ακίνητης περιουσίας.
+          </p>
+        </div>
+        <ul class="info__control control">
+          <li class="control__item control__item">
+            <a href="#intro" class="control__link">
+              Section #1 - Intro
+            </a>
+          </li>
+          <li class="control__item control__item--active">
+            <a class="control__link">
+              Section #2 - Info
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#portfolio" class="control__link">
+              Section #3 - Portfolio
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#consultants" class="control__link">
+              Section #4 - Consultants & Team
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#contacts" class="control__link">
+              Section #5 - Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <span class="label portfolio__label">
+          χαρτοφυλάκιο
+        </span>
+        <h2 class="heading portfolio__heading">
+          Χαρτοφυλάκιο
+        </h2>
+        <h3 class="subheading portfolio__subheading">
+          Πρόγραμμα
+        </h3>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <h4 class="portfolio__project">
+              Barbarusa
+            </h4>
+            <div class="portfolio__wrapper portfolio__wrapper--1">
+              <ul class="portfolio__slider">
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <h4 class="portfolio__project">
+              Park Avenue VIP
+            </h4>
+            <div class="portfolio__wrapper portfolio__wrapper--2">
+              <ul class="portfolio__slider">
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+                <li class="portfolio__slide">
+                  <img class="portfolio__img" src="img/intro__bg.png" alt="Photo of GSM project">
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="portfolio__control control">
+          <li class="control__item control__item">
+            <a href="#intro" class="control__link">
+              Section #1 - Intro
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#info" class="control__link">
+              Section #2 - Info
+            </a>
+          </li>
+          <li class="control__item control__item--active">
+            <a class="control__link">
+              Section #3 - Portfolio
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#consultants" class="control__link">
+              Section #4 - Consultants & Team
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#contacts" class="control__link">
+              Section #5 - Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="consultants" id="consultants">
+      <div class="container">
+        <span class="label consultants__label">
+          ομάδα
+        </span>
+        <h2 class="heading consultants__heading">
+          Σύμβουλοι
+        </h2>
+        <h3 class="subheading consultants__subheading">
+          Γνώρισε τους
+        </h3>
+        <div class="consultants__wrapper">
+          <ul class="consultants__list">
+            <li class="consultants__item consultants__item--NC">
+              <div class="consultants__frame">
+                <h4 class="consultants__name">
+                  Name Consultant
+                </h4>
+                <span class="consultants__rank">
+                  Σύμβουλος μάρκετινγκ
+                </span>
+                <a href="mailto:evi@globalspace.com.cy" class="consultants__mail">
+                  evi@globalspace.com.cy
+                </a>
+              </div>
+            </li>
+            <li class="consultants__item consultants__item--HH">
+              <div class="consultants__frame">
+                <h4 class="consultants__name">
+                  Hila Hana Felz
+                </h4>
+                <span class="consultants__rank">
+                  Σύμβουλος μάρκετινγκ
+                </span>
+                <a href="mailto:evi@globalspace.com.cy" class="consultants__mail">
+                  Hila@globalspace.com.cy
+                </a>
+              </div>
+            </li>
+            <li class="consultants__item consultants__item--DN">
+              <div class="consultants__frame">
+                <h4 class="consultants__name">
+                  David Niv
+                </h4>
+                <span class="consultants__rank">
+                  Σύμβουλος, Διευθυντής του “Auberman-Niv Engineers”
+                </span>
+                <a href="mailto:evi@globalspace.com.cy" class="consultants__mail">
+                  evi@globalspace.com.cy
+                </a>
+              </<div>
+            </li>
+          </ul>
+        </div>
+        <ul class="consultants__control control">
+          <li class="control__item control__item">
+            <a href="#intro" class="control__link">
+              Section #1 - Intro
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#info" class="control__link">
+              Section #2 - Info
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#portfolio" class="control__link">
+              Section #3 - Portfolio
+            </a>
+          </li>
+          <li class="control__item control__item--active">
+            <a class="control__link">
+              Section #4 - Consultants & Team
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#contacts" class="control__link">
+              Section #5 - Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <ul class="team__list">
+          <li class="team__item team__item--A">
+            <div class="team__wrapper">
+              <span class="team__prev">
+                Name6
+              </span>
+              <span class="team__next">
+                Name2
+              </span>
+              <h2 class="heading team__heading">
+                Ομάδα
+              </h2>
+              <h3 class="subheading team__subheading">
+                Γνώρισε τους
+              </h3>
+              <h4 class="team__name">
+                A-name
+              </h4>
+              <p class="team__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li class="team__item team__item--D">
+            <div class="team__wrapper">
+              <span class="team__prev">
+                Name1
+              </span>
+              <span class="team__next">
+                Name3
+              </span>
+              <h2 class="heading team__heading">
+                Ομάδα
+              </h2>
+              <h3 class="subheading team__subheading">
+                Γνώρισε τους
+              </h3>
+              <h4 class="team__name">
+                D-name
+              </h4>
+              <p class="team__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li class="team__item team__item--M">
+            <div class="team__wrapper">
+              <span class="team__prev">
+                Name2
+              </span>
+              <span class="team__next">
+                Yacov Sivan
+              </span>
+              <h2 class="heading team__heading">
+                Ομάδα
+              </h2>
+              <h3 class="subheading team__subheading">
+                Γνώρισε τους
+              </h3>
+              <h4 class="team__name">
+                Marianna Galinkin
+              </h4>
+              <p class="team__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+          <li class="team__item team__item--Y">
+            <div class="team__wrapper">
+              <span class="team__prev">
+                Name3
+              </span>
+              <span class="team__next">
+                Marianna Galinkin
+              </span>
+              <h2 class="heading team__heading">
+                Ομάδα
+              </h2>
+              <h3 class="subheading team__subheading">
+                Γνώρισε τους
+              </h3>
+              <h4 class="team__name">
+                Yacov Sivan
+              </h4>
+              <p class="team__descriptor">
+                Kobi προσχώρησε στην ομάδα πριν από 6 χρόνια και έχει υπηρετήσει στο διοικητικό συμβούλιο της Εταιρείας κατά το μεγαλύτερο μέρος αυτής της περιόδου. Η Kobi εργάζεται στον τομέα των ακινήτων για τα τελευταία 10 χρόνια, τα περισσότερα από τα οποία βρίσκονται στις κομητείες της ΚΑΕ. Ο Kobi έχει επίσης σημαντική εμπειρία στον χρηματοοικονομικό και τον τραπεζικό κλάδο, και ανάμεσα σε άλλες θέσεις εργάστηκε για τη μεγαλύτερη τράπεζα στο Ισραήλ και ήταν ο διευθύνων σύμβουλος μιας τράπεζας στην Αφρική. Ο Kobi κατέχει πτυχίο B.Sc. στη Χημική Μηχανική και ένα MBA.
+              </p>
+            </div>
+          </li>
+          <li class="team__item team__item--M">
+            <div class="team__wrapper">
+              <span class="team__prev">
+                Yacov Sivan
+              </span>
+              <span class="team__next">
+                Evi Pitsillides
+              </span>
+              <h2 class="heading team__heading">
+                Ομάδα
+              </h2>
+              <h3 class="subheading team__subheading">
+                Γνώρισε τους
+              </h3>
+              <h4 class="team__name">
+                Marianna Galinkin
+              </h4>
+              <p class="team__descriptor">
+                Marianna προσχώρησε στο διοικητικό συμβούλιο της εταιρείας πριν από περίπου 10 χρόνια. Η Marianna έχει ισχυρό υπόβαθρο στον τομέα της ανάπτυξης ακινήτων, συμπεριλαμβανομένων των χωρών της ΚΑΚ. Ως πιστοποιημένος δημόσιος λογιστής, η Marianna έχει εμπειρία στη διαχείριση χρηματοοικονομικών και κινδύνων καθώς και σε εταιρικά και νομικά θέματα.
+              </p>
+            </div>
+          </li>
+          <li class="team__item team__item--E">
+            <div class="team__wrapper">
+              <span class="team__prev">
+                Marianna Galinkin
+              </span>
+              <span class="team__next">
+                Name1
+              </span>
+              <h2 class="heading team__heading">
+                Ομάδα
+              </h2>
+              <h3 class="subheading team__subheading">
+                Γνώρισε τους
+              </h3>
+              <h4 class="team__name">
+                Evi Pitsillides
+              </h4>
+              <p class="team__descriptor">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <ul class="team__control control">
+          <li class="control__item control__item">
+            <a href="#intro" class="control__link">
+              Section #1 - Intro
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#info" class="control__link">
+              Section #2 - Info
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#portfolio" class="control__link">
+              Section #3 - Portfolio
+            </a>
+          </li>
+          <li class="control__item control__item--active">
+            <a class="control__link">
+              Section #4 - Consultants & Team
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#contacts" class="control__link">
+              Section #5 - Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <span class="label contacts__label">
+          επαφή
+        </span>
+        <h2 class="heading contacts__heading">
+          Οι επαφές μας
+        </h2>
+        <h3 class="subheading contacts__subheading">
+          Έχετε κάποιες ερωτήσεις;
+        </h3>
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__item--address">
+            Andrea Zakou, 4<br>
+            Egkomi, 2404, Nicosia, Cyprus
+            <svg class="contacts__icon" viewbox="0 0 23 29">
+              <use xlink:href="#address"></use>
+            </svg>
+          </li>
+          <li class="contacts__item contacts__item--phone">
+            +357 (22) 444 500
+            <svg class="contacts__icon" viewbox="0 0 29 29">
+              <use xlink:href="#phone"></use>
+            </svg>
+          </li>
+          <li class="contacts__item contacts__item--fax">
+            +357 (22) 444 545
+            <svg class="contacts__icon" viewbox="0 0 28 29">
+              <use xlink:href="#fax"></use>
+            </svg>
+          </li>
+          <li class="contacts__item contacts__item--email">
+            info@globalspace.com.cy
+            <svg class="contacts__icon" viewbox="0 0 29 22">
+              <use xlink:href="#email"></use>
+            </svg>
+          </li>
+        </ul>
+        <ul class="contacts__control control">
+          <li class="control__item control__item">
+            <a href="#intro" class="control__link">
+              Section #1 - Intro
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#info" class="control__link">
+              Section #2 - Info
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#portfolio" class="control__link">
+              Section #3 - Portfolio
+            </a>
+          </li>
+          <li class="control__item">
+            <a href="#consultants" class="control__link">
+              Section #4 - Consultants & Team
+            </a>
+          </li>
+          <li class="control__item control__item--active">
+            <a class="control__link">
+              Section #5 - Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a href="#" class="footer__logo">
+          <svg class="footer__icon" viewbox="0 0 76 63">
+            <use xlink:href="#logo"></use>
+          </svg>
+          <p class="footer__company">
+            Global Space Management Limited
+            <span class="footer__copyright">
+              © 2018 All rights reserved
+            </span>
+          </p>
+        </a>
+        <a href="#" class="footer__creator">
+          by Evoltech
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/team-names.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="js/slider-init.js"></script>
+</body>
+
+</html>
