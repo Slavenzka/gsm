@@ -52,6 +52,7 @@
     height: 100%;
     background-color: rgba(0, 17, 37, 0.6);
     z-index: 1;
+    pointer-events: none;
   }
 }
 
@@ -69,7 +70,7 @@
 }
 
 .portfolio__slider .slick-arrow {
-  bottom: -26px;
+  bottom: -36px;
   right: 1px;
 }
 
@@ -127,8 +128,7 @@
 @media (min-width: $width__tablet) {
   .portfolio__heading,
   .portfolio__subheading {
-    margin-left: 0;
-    margin-right: auto;
+    width: 640px;
   }
 
   .portfolio__list {
@@ -155,6 +155,12 @@
   .portfolio > .container {
     padding-top: 118px;
     padding-bottom: 36px;
+  }
+
+  .portfolio__heading,
+  .portfolio__subheading {
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .portfolio__list {
@@ -184,7 +190,7 @@
   }
 
   .portfolio__slider .slick-arrow {
-    bottom: -26px;
+    bottom: -36px;
     right: 0;
   }
 

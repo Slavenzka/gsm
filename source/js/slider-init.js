@@ -39,4 +39,18 @@
       ]
     });
   });
+
+  $('.team__list').slick({
+    dots: true,
+    speed: 500,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          dots: false
+        }
+      }
+    ]
+  });
 })();
