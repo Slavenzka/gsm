@@ -107,6 +107,9 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+*:focus {
+  outline: none; }
+
 body {
   margin: 0;
   padding: 0; }
@@ -593,7 +596,7 @@ a {
   padding-top: 61px;
   padding-bottom: 59px;
   background-image: url("../img/portfolio-left-pattern.svg");
-  background-size: cover;
+  background-size: 651px 799px;
   background-repeat: no-repeat; }
 
 .portfolio__heading {
@@ -732,7 +735,11 @@ a {
 @media (min-width: 1280px) {
   .portfolio > .container {
     padding-top: 118px;
-    padding-bottom: 36px; }
+    padding-bottom: 36px;
+    background-image: url("../img/portfolio-left-pattern.svg"), url("../img/portfolio-right-pattern.svg");
+    background-size: 651px 799px, 664px 800px;
+    background-repeat: no-repeat;
+    background-position: 0 0, 105% 0; }
   .portfolio__heading,
   .portfolio__subheading {
     margin-left: 0;
@@ -914,7 +921,11 @@ a {
   background-color: #0e1c2c; }
 
 .team > .container {
-  position: relative; }
+  position: relative;
+  background-image: url("../img/team-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: calc(670px * 0.65) calc(800px * 0.65);
+  background-position: -30px 100%; }
 
 .team__list {
   margin: 0;
@@ -1051,6 +1062,9 @@ a {
     padding-left: 250px; } }
 
 @media (min-width: 1280px) {
+  .team > .container {
+    background-size: 670px 800px;
+    background-position: 0 100%; }
   .team__wrapper {
     position: relative;
     margin: 0;

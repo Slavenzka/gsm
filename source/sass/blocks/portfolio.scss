@@ -10,7 +10,7 @@
   padding-top: 61px;
   padding-bottom: 59px;
   background-image: url("../img/portfolio-left-pattern.svg");
-  background-size: cover;
+  background-size: 651px 799px;
   background-repeat: no-repeat;
 }
 
@@ -155,6 +155,10 @@
   .portfolio > .container {
     padding-top: 118px;
     padding-bottom: 36px;
+    background-image: url("../img/portfolio-left-pattern.svg"), url("../img/portfolio-right-pattern.svg");
+    background-size: 651px 799px, 664px 800px;
+    background-repeat: no-repeat;
+    background-position: 0 0, 105% 0;
   }
 
   .portfolio__heading,
