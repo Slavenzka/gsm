@@ -4,6 +4,10 @@
 
 .team > .container {
   position: relative;
+  background-image: url("../img/team-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: calc(670px * 0.65) calc(800px * 0.65);
+  background-position: -30px 100%;
 }
 
 .team__list {
@@ -175,6 +179,11 @@
 }
 
 @media (min-width: $width__desktop) {
+  .team > .container {
+    background-size: 670px 800px;
+    background-position: 0 100%;
+  }
+
   .team__wrapper {
     position: relative;
     margin: 0;
