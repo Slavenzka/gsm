@@ -1,6 +1,6 @@
 .contacts {
   position: relative;
-  background-image: url("../img/contacts-bg.png");
+  background-image: url("../img/contacts-bg.jpg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 43.8% 0;
@@ -88,13 +88,20 @@
   height: 14px;
 }
 
+.contacts__manager {
+  margin: 0;
+}
+
+.contacts__rank {
+  margin: 0;
+}
+
 @media (min-width: $width__tablet) {
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 160px;
-    // margin-left: 0;
     padding: 0;
     width: 640px;
   }
