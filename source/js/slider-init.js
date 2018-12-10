@@ -13,44 +13,4 @@
       }
     });
   });
-
-  $(document).ready(function(){
-    $('.consultants__list').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots: false,
-      adaptiveHeight: true,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 1279,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        }
-      ]
-    });
-  });
-
-  $('.team__list').slick({
-    dots: true,
-    speed: 500,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          dots: false
-        }
-      }
-    ]
-  });
 })();
