@@ -1,3 +1,27 @@
 .audit > .container {
   background-image: none;
 }
+
+.audit__link {
+  order: 4;
+  align-self: flex-start;
+  margin-top: 20px;
+  margin-left: calc(50% - 175px);
+  font-family: $font-family__main;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: $color__highlight;
+}
+
+@media (min-width: $width__tablet) {
+  .audit__link {
+    margin-left: calc(50% - 320px);
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .audit__link {
+    margin-left: 0;
+  }
+}

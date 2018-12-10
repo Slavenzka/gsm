@@ -54,6 +54,7 @@
   color: $color__highlight;
   font-style: italic;
   letter-spacing: 0.45px;
+  cursor: pointer;
 
   &::before {
     content: "...";
