@@ -459,6 +459,7 @@ a {
   font-weight: 400;
   line-height: 32px;
   color: white;
+  text-align: center;
   opacity: 0.7; }
 
 @media (min-width: 768px) {
@@ -565,7 +566,8 @@ a {
   line-height: 18px;
   color: #bb9b6a;
   font-style: italic;
-  letter-spacing: 0.45px; }
+  letter-spacing: 0.45px;
+  cursor: pointer; }
   .info__cut + label::before {
     content: "...";
     margin-right: 15px;
@@ -825,6 +827,28 @@ a {
 
 .audit > .container {
   background-image: none; }
+
+.audit__link {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 20px;
+  margin-left: calc(50% - 175px);
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #bb9b6a; }
+
+@media (min-width: 768px) {
+  .audit__link {
+    margin-left: calc(50% - 320px); } }
+
+@media (min-width: 1280px) {
+  .audit__link {
+    margin-left: 0; } }
 
 .consultants > .container {
   position: relative;
